@@ -1,0 +1,148 @@
+* {
+    font-family: 'Aboreto', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 90%;
+}
+body {
+    background: linear-gradient(-45deg,rgb(0, 0, 0),rgb(48, 48, 82), rgb(195, 181, 181));
+    height: 800px;
+    max-height: 800px;
+    overflow: hidden;
+}
+header{
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+.descrip{
+    position: relative;
+    top: 0.5em;
+    left: 4em;
+    width: 15em;
+    font-size: 40px;
+}
+main {
+    display: flex;
+    margin-left: 10em; /*espacio a los lados para centrar todo contenido dentro de main*/
+} 
+.input-texto {
+    position: relative;
+    top: 0.5em;
+    right: 3.5em;
+    width: 15em;
+    border-radius: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #301d6e, #443a66, #ced4d0);
+}
+.input-texto:active {
+    transform: scale(0.99);
+}
+.informacion {
+    position: relative;
+    top: -1.5em;
+    right: 3.4em;
+    text-align: center;
+    font-size: 37px;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: rgb(7, 47, 82);
+}
+h6::before{
+    font-style: normal;
+    content: "🧐";
+    font-size: 40px;
+}
+.mensaje-box{
+    display: flex;
+}
+.mensaje {
+    position: relative;
+    top: -3.5em;
+    right: 4.25em;
+    height: 570px;
+    width: 265px;
+    text-align: center;
+    background-color: rgb(26, 32, 66);
+    background-image: url("Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: -25px;
+    background-size: 300px;
+    margin: 0 20px 20px 0;
+    border-radius: 30px;
+    border-width: 3px;
+
+}
+.efectLineascaja {
+    position: relative;
+    left: 4.25em;
+    top: -4.25em;
+    width: 320px;
+    height: 620px;
+    background: #000000;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    place-items: center;
+    place-content: center;
+  }
+.efectLineascaja::before {
+    position: absolute;
+    content: '';
+    height: 200%;
+    width: 180px;
+    animation: efectolineas 2s linear infinite;
+    transition: all 0.2s linear;
+    background-image: linear-gradient(90deg, rgb(29, 36, 183), rgb(25, 156, 227), rgb(255, 255, 255));
+}  
+.efectLineascaja::after {
+    background: linear-gradient(45deg, rgb(195, 181, 181),rgb(48, 48, 82),rgb(0, 0, 0));
+    border-radius: 15px;
+    position: absolute;
+    content: '';
+    inset: 5px;
+}  
+@keyframes efectolineas {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.inputbotones{
+    display: block;
+}
+.botones {
+    position: relative;
+    left: -3.5em;
+    bottom: 10em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10em;
+}
+.desencriptar {
+    margin-left: 30px;
+}
+button {
+    background-color: #301d6e;
+    border-radius: 8px;
+    color: #ffffff;
+    min-width: 240px;
+    padding: 4px;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.85);
+}
+.copiar {
+    position: relative;
+    top: 3em;
+    right: 20.5em;
+    height: 50px;
+}
+footer{
+    position: relative;
+    bottom: 8.5em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: lighter;
+}
